@@ -28,19 +28,11 @@ export default function HomeSection() {
         })
 
         anime({
-            targets: ani_1.current,
+            targets: [ani_1.current, ani_2.current],
             translateX: "0%",
-            easing: 'easeOutElastic',
+            easing: 'easeOutQuad',
             delay: 150,
-            duration: 500,
-        })
-
-        anime({
-            targets: ani_2.current,
-            translateX: "0%",
-            easing: 'easeOutElastic',
-            delay: 150,
-            duration: 500,
+            duration: 100,
         })
     }
 
@@ -70,8 +62,8 @@ export default function HomeSection() {
         <section className='d-flex flex-column justify-content-center align-items-center'>
             <hr/>
             <div className='sp-card-default sp-home-card-section'>
-                <div className='sp-back-card-red' ref={ani_1}></div>
-                <div className='sp-back-card-blue' ref={ani_2}></div>
+                <div className='sp-back-card-red' style={{left: "-16px", bottom: "-16px"}} ref={ani_1}></div>
+                <div className='sp-back-card-blue' style={{right: "-16px", top: "-16px"}} ref={ani_2}></div>
                 <img className='sp-home-card-image' src={ShishuImage} alt="" ref={ani_0}/>
                 <h1>{"Hello! I'm Yousef"}</h1>
                 <p>A Software Developer and an Artist</p>

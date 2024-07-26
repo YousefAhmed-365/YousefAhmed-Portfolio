@@ -16,11 +16,14 @@ nav a{
 }
 
 .sp-card-default{
+    position: relative;
     min-width: 32px;
     min-height: 32px;
 
     border-radius: 10px;
     box-shadow: 0px 0px 20px var(--color-light-shadow);
+
+    background-color: var(--color-light-primary);
 }
 
 .sp-home-card-section{
@@ -66,8 +69,6 @@ nav a{
 .sp-back-card-red{
     position: absolute;
     z-index: -1;
-    left: -16px;
-    bottom: -16px;
 
     width: 200px;
     height: 300px;
@@ -79,8 +80,6 @@ nav a{
 .sp-back-card-blue{
     position: absolute;
     z-index: -1;
-    right: -16px;
-    top: -16px;
 
     width: 200px;
     height: 300px;
@@ -161,4 +160,18 @@ button, .sp-link-button{
 
 #not-found-section p, #not-found-section a{
     font-size: 1.5rem;
+}
+
+.sp-card-info{
+    max-width: 700px;
+    min-height: fit-content;
+
+    padding: 16px;
+}
+
+.sp-card-info-mini{
+    border-radius: 10px;
+    background-color: var(--color-light-secondary);
+    min-height: 8px;
+    padding-inline: 16px;
 }
