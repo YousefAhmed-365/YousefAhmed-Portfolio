@@ -1,5 +1,5 @@
 import React from 'react'
-import ShishuImage from "../assets/shishu.png"
+import ShishuImage from "../assets/shishu.webp"
 import ResumePDF from "../assets/resume.pdf"
 
 import { useRef, useEffect } from "react";
@@ -64,7 +64,7 @@ export default function HomeSection() {
             <div className='sp-card-default sp-home-card-section'>
                 <div className='sp-back-card-red' style={{left: "-16px", bottom: "-16px"}} ref={ani_1}></div>
                 <div className='sp-back-card-blue' style={{right: "-16px", top: "-16px"}} ref={ani_2}></div>
-                <img className='sp-home-card-image' src={ShishuImage} alt="" ref={ani_0}/>
+                <img className='sp-home-card-image' src={ShishuImage} alt="shishu_image.webp" ref={ani_0}/>
                 <h1>{"Hello! I'm Yousef"}</h1>
                 <p>A Software Developer and an Artist</p>
                 <div className='sp-home-btn-group d-flex gap-3'>
