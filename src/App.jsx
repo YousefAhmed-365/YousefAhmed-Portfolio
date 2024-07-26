@@ -8,7 +8,7 @@ import AboutSection from './components/AboutSection'
 
 function App() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename='/YousefAhmed-Portfolio/'>
             <Navbar/>
             <div className='container'>
                 <Routes>
