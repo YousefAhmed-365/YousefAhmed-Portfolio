@@ -1,0 +1,164 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color-light-secondary) !important;
+    overflow-x: hidden;
+}
+
+nav a{
+    cursor: pointer !important;
+
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-weight: bold !important;
+}
+
+.sp-card-default{
+    min-width: 32px;
+    min-height: 32px;
+
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px var(--color-light-shadow);
+}
+
+.sp-home-card-section{
+    position: relative;
+
+    width: 710px;
+    height: 340px;
+
+    padding: 16px;
+
+    background-color: var(--color-light-primary);
+}
+
+.sp-home-card-section h1{
+    font-size: 4.3rem;
+}
+
+.sp-home-card-section p{
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 812px) {
+    .sp-home-card-section{
+        width: 600px;
+    }
+
+    .sp-home-card-section h1{
+        font-size: 3.2rem;
+    }
+
+    .sp-home-card-section p{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .sp-home-card-section{
+        width: 430px;
+        height: 450px;
+    }
+}
+
+.sp-back-card-red{
+    position: absolute;
+    z-index: -1;
+    left: -16px;
+    bottom: -16px;
+
+    width: 200px;
+    height: 300px;
+
+    background-color: var(--color-main-red);
+    border-radius: 10px;
+}
+
+.sp-back-card-blue{
+    position: absolute;
+    z-index: -1;
+    right: -16px;
+    top: -16px;
+
+    width: 200px;
+    height: 300px;
+
+    background-color: var(--color-main-blue);
+    border-radius: 10px;
+}
+
+.sp-home-card-image{
+    position: absolute;
+    right: -96px;
+    bottom: -48px;
+
+    width: 385;
+    height: 400px;
+}
+
+hr{
+    display: block;
+    border: none;
+
+    width: 300px;               
+    height: 2px;
+    margin: 64px 0px !important;
+    
+    background-color: black;
+}
+
+.sp-home-btn-group{
+    position: absolute;
+    bottom: 16px;
+}
+
+button, .sp-link-button{
+    text-decoration: none;
+    font-size: 1.5rem !important;
+    padding: 4px 48px !important;
+    line-height: 0px;
+    border: none;
+    outline: none;
+}
+
+.sp-button{
+    background-color: black !important;
+    color: white !important;
+    border-radius: 10px !important;
+}
+
+.sp-button-outline{
+    background-color: white !important;
+    color: black !important;
+    border: solid 5px black !important;
+    border-radius: 10px !important;
+}
+
+.sp-button:hover{
+    background-color: white !important;
+    color: black !important;
+    outline: solid 5px black !important;
+    outline-offset: -5px;
+    border-radius: 10px !important;
+}
+
+.sp-button-outline:hover, .sp-button-outline:hover span{
+    background-color: rgb(0, 0, 0) !important;
+    color: rgb(255, 255, 255) !important;
+    fill: white;
+}
+
+#not-found-section h1{
+    font-size: 10.5rem;
+    color: var(--color-light-teritary);
+}
+
+#not-found-section p{
+    color: var(--color-light-teritary);
+}
+
+#not-found-section p, #not-found-section a{
+    font-size: 1.5rem;
+}
