@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import './App.css'
 
 import FlatNavbar from './components/FlatNavbar'
@@ -18,7 +18,8 @@ function App() {
                             <AboutSection/>
                         </>
                     }/>
-                    <Route path='/*' element={<NotFoundSection />}/>
+                    <Route path='/not-found' element={<NotFoundSection />}/>
+                    <Route path='*' element={<Navigate replace to="/not-found"/>}/>
                 </Routes>
             </div>
         </BrowserRouter>

@@ -9,7 +9,7 @@ export default defineConfig({
         minify: 'terser',
     },
     plugins: [react(),
-    visualizer({ open: true }),
+    visualizer({ open: false }),
     ],
     base: '/YousefAhmed-Portfolio/'
 })
