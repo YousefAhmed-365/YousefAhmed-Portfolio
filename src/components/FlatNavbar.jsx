@@ -7,8 +7,8 @@ import { Navbar, Container, Nav } from 'react-bootstrap'
 export default function FlatNavbar() {
     return (
         <Navbar expand="md" className="justify-content-center">
-            <Container>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Container class='d-flex justify-content-center'>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" className='mx-auto'/>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mx-auto text-center">
                         <Nav.Link as={HashLink} smooth to="/">Home</Nav.Link>

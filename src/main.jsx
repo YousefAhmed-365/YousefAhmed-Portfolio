@@ -5,10 +5,7 @@ import App from './App.jsx'
 import "./Index.scss"
 
 import 'bootstrap/dist/css/bootstrap.min.css'
-// import * as bootstrap from 'bootstrap'
-
-// import 'bootstrap/dist/css/bootstrap.min.css'
-// import 'bootstrap/dist/js/bootstrap.bundle.min.js'
+import { Collapse } from 'react-bootstrap'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

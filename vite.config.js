@@ -8,14 +8,8 @@ export default defineConfig({
     build: {
         minify: 'terser',
     },
-    plugins: [  react(),
-                visualizer({ open: true }),
-                purgecss({
-                    content: [
-                      './index.html',
-                      './src/**/*.{js,ts,jsx,tsx,html}',
-                    ],
-                    safelist: ['safelist-class'], // Add classes that should not be purged
-                  })],
+    plugins: [react(),
+    visualizer({ open: true }),
+    ],
     base: '/YousefAhmed-Portfolio/'
 })
