@@ -5,11 +5,9 @@ import ResumePDF from "../assets/resume.pdf"
 import { useRef, useEffect } from "react";
 import anime from "animejs/lib/anime.es.js"
 
-import {
-    LinkedIn,
-    GitHub,
-    FileDownload
-} from "@mui/icons-material"
+import LinkedIn from "@mui/icons-material/LinkedIn";
+import GitHub from "@mui/icons-material/GitHub";
+import FileDownload from "@mui/icons-material/FileDownload";
 
 export default function HomeSection() {
     const ani_0 = useRef(null)
