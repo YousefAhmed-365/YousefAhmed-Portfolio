@@ -32,7 +32,7 @@ function InfoCard({title, content, info, useDefaultStyle}){
     })
 
     return(
-        <div ref={selfRef} className='position-relative'>
+        <div ref={selfRef} className='position-relative sp-scroll-hidden'>
             {useDefaultStyle == true? (<div className='sp-back-card-blue' style={{left: "-16px", top: "-16px"}}></div>) : (<div className='sp-back-card-red' style={{right: "-16px", top: "-16px"}}></div>)}
             <div className={"sp-card-default sp-card-info mb-5 " + (!useDefaultStyle && "align-self-end")}>
                 
@@ -60,21 +60,28 @@ InfoCard.propTypes = {
 };
 
 
+const aboutCards = [
+    {
+        title: "Web & Software Developer",
+        content: "I’m an entry level fullstack (MERN) developer and a self-taught C/C++ programmar. My skills are mainly in problem solving. I also love exploring different fields of programming like game development and low-level assembly.",
+        info: ["Languages: HTML5, CSS3, JS, TypeScript, PHP, C/C++, Python", "Frameworks & Libs: ReactJS, BootstrapCSS, TailwindCSS, NodeJS, ExpressJS, Laravel, SFML, TKinter", "Tools: Git, Github, VSCode, XAMPP, IntelliJ IDEA, PyCharm, CMake, GNU/Linux, CMake"],
+        useDefaultStyle: true
+    },
+    {
+        title: "Artist",
+        content: "I’m a beginner artist who specializes in digital, pixel, vector, and 3D art.",
+        info: ["Tools: Krita, GIMP, Inkscape, Blender, Aseprite"],
+        useDefaultStyle: false
+    },
+    {
+        title: "Game Developer",
+        content: "I develop games and learn about game design just for fun... :)",
+        info: ["Tools: Godot (GDSscript), SFML (C/C++)"],
+        useDefaultStyle: true
+    }
+]
+
 export default function AboutSection() {
-    const aboutCards = [
-        {
-            title: "Web & Software Developer",
-            content: "I’m an entry level fullstack (MERN) stack developer and a self-taught C/C++ developer. I love exploring different fields of programming like game development and low-level asm.",
-            info: ["Languages: HTML5, CSS3, JS, TypeScript, PHP, C/C++, Python", "Frameworks & Libs: ReactJS, BootstrapCSS, TailwindCSS, NodeJS, ExpressJS, Laravel, SFML, TKinter", "Tools: Git, Github, VSCode, XAMPP, IntelliJ IDEA, PyCharm, CMake, GNU/Linux, CMake"],
-            useDefaultStyle: true
-        },
-        {
-            title: "Artist",
-            content: "I’m a beginner artist who specializes in digital, pixel, vector, and 3D art.",
-            info: ["Tools: Krita, GIMP, Inkscape, Blender, Aseprite"],
-            useDefaultStyle: false
-        },
-    ]
 
     return (
         <section id='about-section' className='d-flex flex-column align-items-center'>

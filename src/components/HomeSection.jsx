@@ -6,8 +6,10 @@ import { useRef, useEffect } from "react";
 import anime from "animejs/lib/anime.es.js"
 
 import {
-    FileDownloadSVGIcon,
-} from "@react-md/material-icons"
+    LinkedIn,
+    GitHub,
+    FileDownload
+} from "@mui/icons-material"
 
 export default function HomeSection() {
     const ani_0 = useRef(null)
@@ -61,20 +63,30 @@ export default function HomeSection() {
     return (
         <section className='d-flex flex-column justify-content-center align-items-center'>
             <hr/>
-            <div className='sp-card-default sp-home-card-section'>
+            <div className='position-relative'>
                 <div className='sp-back-card-red' style={{left: "-16px", bottom: "-16px"}} ref={ani_1}></div>
                 <div className='sp-back-card-blue' style={{right: "-16px", top: "-16px"}} ref={ani_2}></div>
-                <img className='sp-home-card-image' src={ShishuImage} alt="shishu_image.webp" ref={ani_0}/>
-                <h1>{"Hello! I'm Yousef"}</h1>
-                <p>A Software Developer and an Artist</p>
-                <div className='sp-home-btn-group d-flex gap-3'>
-                    <button className='sp-button' onMouseOver={animate_hoverEffectEnter} onMouseOut={animate_hoverEffectLeave}>About</button>
-                    <a className='sp-link-button sp-button-outline' href={ResumePDF} target='_blank' style={{display: "inline-block", pointerEvents: "auto"}} onMouseOver={animate_hoverEffectEnter} onMouseOut={animate_hoverEffectLeave}>
-                        <div>
-                            <FileDownloadSVGIcon style={{width:"30px", height:"30px"}}/>
-                            <span style={{fontSize: "1.5rem", verticalAlign: "middle"}}>Resume</span>
-                        </div>
-                    </a>
+                <div className='sp-card-default sp-home-card-section'>
+                    <img className='sp-home-card-image' src={ShishuImage} alt="shishu_image.webp" ref={ani_0}/>
+                    <h1 className='mb-0'>{"Hello! I'm Yousef"}</h1>
+                    <p className='mb-3'>A Software Developer and an Artist</p>
+                    <div>
+                        <LinkedIn className='sp-simple-icon me-1'/>
+                        <a href="#" style={{verticalAlign: "middle"}}>LinkedIn</a>
+                    </div>
+                    <div>
+                        <GitHub className='sp-simple-icon me-1'/>
+                        <a href="#" style={{verticalAlign: "middle"}}>Github</a>
+                    </div>
+                    <div className='sp-home-btn-group d-flex gap-3'>
+                        <button className='sp-button' onMouseOver={animate_hoverEffectEnter} onMouseOut={animate_hoverEffectLeave}>About</button>
+                        <a className='sp-link-button sp-button-outline' href={ResumePDF} target='_blank' style={{display: "inline-block", pointerEvents: "auto"}} onMouseOver={animate_hoverEffectEnter} onMouseOut={animate_hoverEffectLeave}>
+                            <span>
+                                <FileDownload className='sp-simple-icon' style={{transition: "none"}}/>
+                                <span style={{fontSize: "1.5rem", verticalAlign: "middle"}}>Resume</span>
+                            </span>
+                        </a>
+                    </div>
                 </div>
             </div>
             <hr/>
