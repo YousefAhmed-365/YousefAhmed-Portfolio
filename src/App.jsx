@@ -11,7 +11,7 @@ function App() {
     return (
         <BrowserRouter basename='/YousefAhmed-Portfolio/'>
             <FlatNavbar/>
-            <div className='container'>
+            <div className='container px-sm-0 px-md-5'>
                 <Routes>
                     <Route index path='/' element={
                         <>

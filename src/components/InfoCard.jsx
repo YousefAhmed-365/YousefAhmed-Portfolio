@@ -32,7 +32,7 @@ export default function InfoCard({title, content, info, useDefaultStyle, compone
     })
 
     return(
-        <div ref={selfRef} className='position-relative sp-scroll-hidden'>
+        <div ref={selfRef} className='sp-card-group position-relative sp-scroll-hidden'>
             {useDefaultStyle == true? (<div className='sp-back-card-blue' style={{left: "-16px", top: "-16px"}}></div>) : (<div className='sp-back-card-red' style={{right: "-16px", top: "-16px"}}></div>)}
             <div className={"sp-card-default sp-card-info mb-5 " + (!useDefaultStyle && "align-self-end")} style={css && css}>
                 {component && component}
