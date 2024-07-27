@@ -59,7 +59,7 @@ export default function ContactSection() {
                                 as="textarea"
                                 rows={5}
                                 name="message"
-                                placeholder="How's the whether today?..."
+                                placeholder="Do you like cats?..."
                                 style={{ resize: "vertical", minHeight: "200px", maxHeight: "300px" }}
                                 required
                             />
