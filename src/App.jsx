@@ -18,8 +18,8 @@ function App() {
                             <AboutSection/>
                         </>
                     }/>
-                    <Route path='/not-found' element={<NotFoundSection />}/>
-                    <Route path='*' element={<Navigate replace to="/not-found"/>}/>
+                    <Route path='/404' element={<NotFoundSection />}/>
+                    <Route path='*' element={<Navigate replace to="/404"/>}/>
                 </Routes>
             </div>
         </BrowserRouter>
