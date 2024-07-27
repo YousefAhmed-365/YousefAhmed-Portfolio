@@ -75,7 +75,7 @@ const aboutCards = [
     },
     {
         title: "Game Developer",
-        content: "I develop games and learn about game design just for fun... :)",
+        content: "I love to develop games and learn about game design just for fun... :)",
         info: ["Tools: Godot (GDSscript), SFML (C/C++)"],
         useDefaultStyle: true
     }

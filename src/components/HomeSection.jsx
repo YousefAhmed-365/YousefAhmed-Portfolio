@@ -72,14 +72,14 @@ export default function HomeSection() {
                     <p className='mb-3'>A Software Developer and an Artist</p>
                     <div>
                         <LinkedIn className='sp-simple-icon me-1'/>
-                        <a href="#" style={{verticalAlign: "middle"}}>LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/yousef-ahmed-3a9a572a4/" target='_blank' style={{verticalAlign: "middle"}}>LinkedIn</a>
                     </div>
                     <div>
                         <GitHub className='sp-simple-icon me-1'/>
-                        <a href="#" style={{verticalAlign: "middle"}}>Github</a>
+                        <a href="https://github.com/YousefAhmed-365" target='_blank' style={{verticalAlign: "middle"}}>Github</a>
                     </div>
                     <div className='sp-home-btn-group d-flex gap-3'>
-                        <button className='sp-button' onMouseOver={animate_hoverEffectEnter} onMouseOut={animate_hoverEffectLeave}>About</button>
+                        <button className='sp-button' onMouseOver={animate_hoverEffectEnter} onMouseOut={animate_hoverEffectLeave}>Contact</button>
                         <a className='sp-link-button sp-button-outline' href={ResumePDF} target='_blank' style={{display: "inline-block", pointerEvents: "auto"}} onMouseOver={animate_hoverEffectEnter} onMouseOut={animate_hoverEffectLeave}>
                             <span>
                                 <FileDownload className='sp-simple-icon' style={{transition: "none"}}/>
