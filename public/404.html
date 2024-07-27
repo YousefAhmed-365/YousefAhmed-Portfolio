@@ -3,20 +3,32 @@
     <head>
         <meta charset="UTF-8">
         <title>Page Not Found</title>
-        <script type="text/javascript">
-            var pathSegmentsToKeep = 0;
-      
-            var l = window.location;
-            l.replace(
-              l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-              l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
-              l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-              (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-              l.hash
-            );
-      
-          </script>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100dvh;
+            }
+
+            h1{
+                position: relative;
+            }
+
+            img{
+                position: absolute;
+                left: -130px;
+                top: -70px;
+            }
+        </style>
     </head>
     <body>
+        <section id='not-found-section'>
+            <h1>
+                <img src='hat_man.webp' alt='hat_man.webp' />
+                404
+            </h1>
+            <p>Page Not Found. Return <a href='/YousefAhmed-Portfolio/'>Home</a>?</p>
+        </section>
     </body>
 </html>
