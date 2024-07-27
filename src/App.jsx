@@ -5,6 +5,7 @@ import FlatNavbar from './components/FlatNavbar'
 import HomeSection from './components/HomeSection'
 import NotFoundSection from './components/NotFoundSection'
 import AboutSection from './components/AboutSection'
+import ContactSection from './components/ContactSection'
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                         <>
                             <HomeSection/>
                             <AboutSection/>
+                            <ContactSection/>
                         </>
                     }/>
                     <Route path='/404' element={<NotFoundSection />}/>

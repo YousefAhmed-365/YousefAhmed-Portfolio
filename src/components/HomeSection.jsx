@@ -3,11 +3,14 @@ import ShishuImage from "../assets/shishu.webp"
 import ResumePDF from "../assets/resume.pdf"
 
 import { useRef, useEffect } from "react";
+import { HashLink } from 'react-router-hash-link';
 import anime from "animejs/lib/anime.es.js"
 
 import LinkedIn from "@mui/icons-material/LinkedIn";
 import GitHub from "@mui/icons-material/GitHub";
 import FileDownload from "@mui/icons-material/FileDownload";
+
+import { animate_hoverEffectEnter, animate_hoverEffectLeave } from './animations';
 
 export default function HomeSection() {
     const ani_0 = useRef(null)
@@ -36,24 +39,6 @@ export default function HomeSection() {
         })
     }
 
-    function animate_hoverEffectEnter(element){
-        anime({
-            targets: element.currentTarget,
-            rotate: -3,
-            duration: 300,
-            easing: "easeOutElastic"
-        })
-    }
-
-    function animate_hoverEffectLeave(element){
-        anime({
-            targets: element.currentTarget,
-            rotate: 0,
-            duration: 300,
-            easing: "easeOutElastic"
-        })
-    }
-
     useEffect(() => {
         animate_landingPageSection()
     }, [])
@@ -77,7 +62,9 @@ export default function HomeSection() {
                         <a href="https://github.com/YousefAhmed-365" target='_blank' style={{verticalAlign: "middle"}}>Github</a>
                     </div>
                     <div className='sp-home-btn-group d-flex gap-3'>
-                        <button className='sp-button' onMouseOver={animate_hoverEffectEnter} onMouseOut={animate_hoverEffectLeave}>Contact</button>
+                        <HashLink className='sp-link-button sp-button centered-link' to='/#contact-section' style={{pointerEvents: "auto"}} onMouseOver={animate_hoverEffectEnter} onMouseOut={animate_hoverEffectLeave}>
+                            Contact
+                        </HashLink>
                         <a className='sp-link-button sp-button-outline' href={ResumePDF} target='_blank' style={{display: "inline-block", pointerEvents: "auto"}} onMouseOver={animate_hoverEffectEnter} onMouseOut={animate_hoverEffectLeave}>
                             <span>
                                 <FileDownload className='sp-simple-icon' style={{transition: "none"}}/>
