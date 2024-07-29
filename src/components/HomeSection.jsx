@@ -17,24 +17,24 @@ export default function HomeSection() {
     const ani_1 = useRef(null)
     const ani_2 = useRef(null)
 
-    function animate_landingPageSection(){
-        anime.set(ani_0.current, {scale: 0.5})
-        anime.set(ani_1.current, {translateX: "-50%"})
-        anime.set(ani_2.current, {translateX: "50%"})
+    function animate_landingPageSection() {
+        anime.set(ani_0.current, { scale: 0.5 })
+        anime.set(ani_1.current, { translateX: "-30%" })
+        anime.set(ani_2.current, { translateX: "30%" })
 
         anime({
             targets: ani_0.current,
             scale: "1",
             easing: 'easeOutElastic',
             delay: 100,
-            duration: 1000,
+            duration: 1000
         })
 
         anime({
             targets: [ani_1.current, ani_2.current],
             translateX: "0%",
             easing: 'easeOutQuad',
-            delay: 150,
+            delay: 300,
             duration: 100,
         })
     }
@@ -45,36 +45,39 @@ export default function HomeSection() {
 
     return (
         <section className='d-flex flex-column justify-content-center align-items-center'>
-            <hr/>
-            <div className='position-relative'>
-                <div className='sp-back-card-red' style={{left: "-16px", bottom: "-16px"}} ref={ani_1}></div>
-                <div className='sp-back-card-blue' style={{right: "-16px", top: "-16px"}} ref={ani_2}></div>
-                <div className='sp-card-default sp-home-card-section'>
-                    <img className='sp-home-card-image' src={ShishuImage} alt="shishu_image.webp" ref={ani_0}/>
-                    <h1 className='mb-0'>{"Hello! I'm Yousef"}</h1>
-                    <p className='mb-3'>A Software Developer and an Artist</p>
+            <hr />
+            <div id="sp-home-card" className='position-relative w-100'>
+                <div className='sp-back-card-red' style={{ left: "-16px", bottom: "-16px" }} ref={ani_1}></div>
+                <div className='sp-back-card-blue' style={{ right: "-16px", top: "-16px" }} ref={ani_2}></div>
+                <div id='sp-home-card-section' className='sp-card-default d-flex flex-column'>
                     <div>
-                        <LinkedIn className='sp-simple-icon me-1'/>
-                        <a href="https://www.linkedin.com/in/yousef-ahmed-3a9a572a4/" target='_blank' style={{verticalAlign: "middle"}}>LinkedIn</a>
+                        <img id='sp-home-card-image' src={ShishuImage} alt="shishu_image.webp" ref={ani_0} />
+                        <h1 className='mb-0'>{"Hello! I'm Yousef"}</h1>
+                        <p className='mb-3'>A Software Developer and an Artist</p>
+                        <div>
+                            <LinkedIn className='sp-simple-icon me-1' />
+                            <a href="https://www.linkedin.com/in/yousef-ahmed-3a9a572a4/" target='_blank' style={{ verticalAlign: "middle" }}>LinkedIn</a>
+                        </div>
+                        <div>
+                            <GitHub className='sp-simple-icon me-1' />
+                            <a href="https://github.com/YousefAhmed-365" target='_blank' style={{ verticalAlign: "middle" }}>Github</a>
+                        </div>
                     </div>
-                    <div>
-                        <GitHub className='sp-simple-icon me-1'/>
-                        <a href="https://github.com/YousefAhmed-365" target='_blank' style={{verticalAlign: "middle"}}>Github</a>
-                    </div>
-                    <div className='sp-home-btn-group d-flex gap-3'>
-                        <HashLink id='contact-button' className='sp-link-button sp-button centered-link' to='/#contact-section' style={{pointerEvents: "auto"}} onMouseOver={animate_hoverEffectEnter} onMouseOut={animate_hoverEffectLeave}>
-                            Contact
+                    <div className='flex-grow-1'></div>
+                    <div className='sp-button-group d-flex gap-3 z-1'>
+                        <HashLink id='contact-button' className='sp-link-button sp-button centered-link' to='/#contact-section' style={{ pointerEvents: "auto" }} onMouseEnter={animate_hoverEffectEnter} onMouseLeave={animate_hoverEffectLeave} onTouchStart={animate_hoverEffectEnter} onTouchEnd={animate_hoverEffectLeave}>
+                            <span style={{ fontSize: "1.5rem", verticalAlign: "middle", userSelect: "none" }}>Projects</span>
                         </HashLink>
-                        <a id='resume-button' className='sp-link-button sp-button-outline' href={ResumePDF} target='_blank' style={{display: "inline-block", pointerEvents: "auto"}} onMouseOver={animate_hoverEffectEnter} onMouseOut={animate_hoverEffectLeave}>
+                        <a id='resume-button' className='sp-link-button sp-button-outline' href={ResumePDF} target='_blank' style={{ display: "inline-block", pointerEvents: "auto" }} onMouseEnter={animate_hoverEffectEnter} onMouseLeave={animate_hoverEffectLeave} onTouchStart={animate_hoverEffectEnter} onTouchEnd={animate_hoverEffectLeave}>
                             <span>
-                                <FileDownload className='sp-simple-icon' style={{transition: "none"}}/>
-                                <span style={{fontSize: "1.5rem", verticalAlign: "middle"}}>Resume</span>
+                                <FileDownload className='sp-simple-icon' style={{ transition: "none" }} />
+                                <span style={{ fontSize: "1.5rem", verticalAlign: "middle" }}>Resume</span>
                             </span>
                         </a>
                     </div>
                 </div>
             </div>
-            <hr/>
+            <hr />
         </section>
     )
 }

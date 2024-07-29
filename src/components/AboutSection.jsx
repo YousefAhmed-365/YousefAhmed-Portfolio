@@ -28,16 +28,16 @@ export default function AboutSection() {
     return (
         <section id='about-section' className='d-flex flex-column align-items-center'>
             <h1>About</h1>
-            <hr/>
+            <hr />
             <div className='d-flex flex-column w-100'>
-                {aboutCards && aboutCards.map((data, index)=>{
+                {aboutCards && aboutCards.map((data, index) => {
                     return (
-                        <InfoCard key={index} title={data.title} content={data.content} info={data.info} useDefaultStyle={data.useDefaultStyle}/>
+                        <InfoCard key={index} title={data.title} content={data.content} info={data.info} useDefaultStyle={data.useDefaultStyle} />
                     )
                 })}
             </div>
             <span className='mt-5'></span>
-            <hr/>
+            <hr />
         </section>
     )
 }

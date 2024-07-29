@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 
-*{
+* {
     font-family: "Jua";
     font-size: medium;
     line-height: 1.3;
 }
 
-:root{
+:root {
     --color-light-primary: #FFFFFF;
     --color-light-secondary: #EEEEEE;
     --color-light-teritary: #aaaaaa;
@@ -15,6 +15,17 @@
     --color-main-red: #FF4E4E;
 }
 
-p{
+body, html{
+    overflow-x: hidden !important;
+}
+
+@media (max-width: 768px) {
+    #root {
+        width: 100%;
+        min-width: 320px !important;
+    }
+}
+
+p {
     margin-bottom: 0px !important;
 }

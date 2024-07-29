@@ -10,18 +10,18 @@ import ContactSection from './components/ContactSection'
 function App() {
     return (
         <BrowserRouter basename='/YousefAhmed-Portfolio/'>
-            <FlatNavbar/>
-            <div className='container px-sm-0 px-md-5'>
+            <FlatNavbar />
+            <div className='sp-container'>
                 <Routes>
                     <Route index path='/' element={
                         <>
-                            <HomeSection/>
-                            <AboutSection/>
-                            <ContactSection/>
+                            <HomeSection />
+                            <AboutSection />
+                            <ContactSection />
                         </>
-                    }/>
-                    <Route path='/404' element={<NotFoundSection />}/>
-                    <Route path='*' element={<Navigate replace to="/404"/>}/>
+                    } />
+                    <Route path='/404' element={<NotFoundSection />} />
+                    <Route path='*' element={<Navigate replace to="/404" />} />
                 </Routes>
             </div>
         </BrowserRouter>
