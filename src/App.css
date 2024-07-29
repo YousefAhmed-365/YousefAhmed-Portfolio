@@ -5,6 +5,10 @@ body {
     align-items: center;
 
     background-color: var(--color-light-secondary) !important;
+    background-image: url("assets/background2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
 }
 
 nav a {
