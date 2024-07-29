@@ -6,6 +6,8 @@ import HomeSection from './components/HomeSection'
 import NotFoundSection from './components/NotFoundSection'
 import AboutSection from './components/AboutSection'
 import ContactSection from './components/ContactSection'
+import ProjectsSection from './components/ProjectsSection'
+import FlatFooter from './components/FlatFooter'
 
 function App() {
     return (
@@ -17,6 +19,7 @@ function App() {
                         <>
                             <HomeSection />
                             <AboutSection />
+                            <ProjectsSection />
                             <ContactSection />
                         </>
                     } />
@@ -24,6 +27,7 @@ function App() {
                     <Route path='*' element={<Navigate replace to="/404" />} />
                 </Routes>
             </div>
+            <FlatFooter />
         </BrowserRouter>
     )
 }

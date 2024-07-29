@@ -1,6 +1,5 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import InfoCard from './InfoCard'
-
 
 const aboutCards = [
     {
@@ -32,7 +31,7 @@ export default function AboutSection() {
             <div className='d-flex flex-column w-100'>
                 {aboutCards && aboutCards.map((data, index) => {
                     return (
-                        <InfoCard key={index} title={data.title} content={data.content} info={data.info} useDefaultStyle={data.useDefaultStyle} />
+                        <InfoCard key={index} title={data.title} topImage={data.testImage} content={data.content} info={data.info} useDefaultStyle={data.useDefaultStyle} />
                     )
                 })}
             </div>

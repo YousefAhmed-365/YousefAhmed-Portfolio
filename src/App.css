@@ -70,6 +70,7 @@ nav a {
 }
 
 .sp-container {
+    max-width: 750px !important;
     padding-inline: 32px;
 }
 
@@ -177,11 +178,17 @@ button,
     padding: 16px;
 }
 
+
 .sp-card-info-mini {
     border-radius: 10px;
     background-color: var(--color-light-secondary);
     min-height: 8px;
     padding-inline: 16px;
+}
+
+.sp-card-info-mini-style {
+    border-radius: 10px;
+    background-color: var(--color-light-secondary);
 }
 
 .sp-scroll-hidden {
@@ -256,6 +263,10 @@ button,
     .sp-link-button {
         padding-inline: 14px !important;
     }
+
+    .sp-button-group {
+        justify-content: space-evenly;
+    }
 }
 
 @media only screen and (max-width: 375px) {
@@ -288,4 +299,16 @@ button,
     .sp-button-group {
         flex-direction: column;
     }
+}
+
+#footer-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-inline: 32px;
+    padding-bottom: 32px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }

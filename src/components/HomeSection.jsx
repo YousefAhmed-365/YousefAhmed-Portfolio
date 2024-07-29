@@ -11,7 +11,6 @@ import GitHub from "@mui/icons-material/GitHub";
 import FileDownload from "@mui/icons-material/FileDownload";
 
 import { animate_hoverEffectEnter, animate_hoverEffectLeave } from './animations';
-import { Opacity } from '@mui/icons-material';
 
 export default function HomeSection() {
     const ani_0 = useRef(null)

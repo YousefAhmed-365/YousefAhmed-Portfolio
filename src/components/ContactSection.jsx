@@ -1,10 +1,8 @@
 import React, { useEffect, useRef } from 'react'
 import InfoCard from './InfoCard'
 
-import { useState } from 'react';
 import { Form } from 'react-bootstrap'
 import { animate_hoverEffectEnter, animate_hoverEffectLeave } from './animations'
-import { Padding, Widgets } from '@mui/icons-material'
 import { useForm, ValidationError } from '@formspree/react'
 import anime from 'animejs'
 
