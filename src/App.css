@@ -53,6 +53,7 @@ nav a {
     bottom: -48px;
 
     width: 385px;
+    pointer-events: none;
 }
 
 
@@ -92,6 +93,10 @@ nav a {
 
     background-color: var(--color-main-blue);
     border-radius: 10px;
+}
+
+#sp-home-card .sp-back-card-red, #sp-home-card .sp-back-card-blue {
+    opacity: 0;
 }
 
 hr {
@@ -190,6 +195,14 @@ button,
     color: black;
 }
 
+#sp-home-card-section .sp-link-normal{
+    margin-bottom: 4px;
+}
+
+#sp-home-card-section .sp-link-normal a{
+    font-size: 1.3rem;
+}
+
 @media only screen and (max-width: 768px) {
     #sp-home-card {
         width: 532px !important;
@@ -264,7 +277,7 @@ button,
 
     #sp-home-card-image {
         width: 300px;
-        right: -50px;
+        right: -64px;
         bottom: 40px;
     }
 
