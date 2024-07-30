@@ -1,3 +1,5 @@
+import ReactPaginate from 'react-paginate';
+
 import React from 'react'
 import GitHub from '@mui/icons-material/GitHub';
 
@@ -34,6 +36,7 @@ const data = [
 ]
 
 export default function ProjectsSection() {
+
     return (
         <section id='projects-section' className='d-flex flex-column align-items-center'>
             <h1>Projects</h1>
