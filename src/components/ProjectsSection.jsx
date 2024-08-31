@@ -25,7 +25,7 @@ const data = [
         content: 'A social media facebook/twitter like clone made for practice.',
         useDefaultStyle: false,
         tags: ["Backend", "Laravel"],
-        links: [{ title: 'Github', link: 'https://github.com/YousefAhmed-365/YousefAhmed-Portfolio', icon: <><GitHub className='sp-simple-icon' style={{ transition: 'none' }} /></> }],
+        links: [{ title: 'Github', link: 'https://github.com/YousefAhmed-365/Notes', icon: <><GitHub className='sp-simple-icon' style={{ transition: 'none' }} /></> }],
     },
     {
         title: 'BluV Engine',
