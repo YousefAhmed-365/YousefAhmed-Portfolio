@@ -20,7 +20,7 @@ function useAnimateInScroll(elementRef, animation) {
                 }
             })
         }, {
-            rootMargin: "-130px"
+            threshold: 0.3
         })
 
         observer.observe(elementRef.current);

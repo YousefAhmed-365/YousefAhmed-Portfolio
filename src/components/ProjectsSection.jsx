@@ -21,16 +21,23 @@ const data = [
         links: [{ title: 'Github', link: 'https://github.com/YousefAhmed-365/YousefAhmed-Portfolio', icon: <><GitHub className='sp-simple-icon' style={{ transition: 'none' }} /></> }],
     },
     {
+        title: 'Notes',
+        content: 'A social media facebook/twitter like clone made for practice.',
+        useDefaultStyle: false,
+        tags: ["Backend", "Laravel"],
+        links: [{ title: 'Github', link: 'https://github.com/YousefAhmed-365/YousefAhmed-Portfolio', icon: <><GitHub className='sp-simple-icon' style={{ transition: 'none' }} /></> }],
+    },
+    {
         title: 'BluV Engine',
         content: 'A state based engine framework made for SFML. (Note: This project is currently deprecated and being reworked on)',
-        useDefaultStyle: false,
+        useDefaultStyle: true,
         tags: ["Framework", "C/C++"],
         links: [{ title: 'Github', link: 'https://github.com/YousefAhmed-365/BluVEngine', icon: <><GitHub className='sp-simple-icon' style={{ transition: 'none' }} /></> }],
     },
     {
         title: 'Misc. Projects Made During Courses & Training',
         content: 'Worked on multiple project during school and Pearson (BTec Level 3) training. For more information contact me.',
-        useDefaultStyle: true,
+        useDefaultStyle: false,
         tags: ["Web/Software Development", "Frontend/Backend"],
     },
 ]
